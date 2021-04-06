@@ -1,0 +1,82 @@
+.tableHead{
+    height: 1em;
+    min-width: 8%;
+    max-width: 8%;
+    text-align: center;
+    border-width: 0px 2px 4px 2px;
+    border-color: black;
+    border-style: solid;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+}
+.presentationTable{
+    width: 80vw;
+    margin: auto;
+    max-height: 55vh;
+    height: 55vh;
+}
+.tableColumn{
+    text-align: center;
+    width: 8%;
+    max-height: 55vh;
+    border-width: 0px 2px 0px 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 0;
+    padding-top: 0.5vh;
+}
+
+.presentationList{
+    list-style-type: none;
+    width: 100%;
+    line-height: 0.5em;
+    margin-top: 0;
+    margin-bottom: auto;
+    max-height: 55vh;
+    height: 55vh;
+    padding:0;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #17a2b8;
+    padding-bottom: 1%;
+
+}
+
+.presentationCard{
+    padding-top: 4%;
+    border: 3px solid #60d4ea;
+    background-color: #60d4ea;
+    border-radius: 5px;
+    margin-bottom: 0.5vh;
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#yearSelector{
+    height: 100px;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 50px;
+    text-align: center;
+}
+#yearSelector >table{
+    margin: auto;
+}
+
+
+
+  
+.presentationList::-webkit-scrollbar {
+    display: none;
+  }

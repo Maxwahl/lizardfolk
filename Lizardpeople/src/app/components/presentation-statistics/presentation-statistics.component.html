@@ -1,0 +1,23 @@
+
+<div id="container" style="height: 80%;padding-top: 2%;">
+    <h1>Presentation Statistics</h1>
+    <form (ngSubmit)="onSubmit()" #filterForm="ngForm" id="filterForm">
+        <div class="form-group">
+            <label for="fromDate">From-Date</label>
+            <input class="form-control" type="date" placeholder="Pick a DateTime" [(ngModel)]="filter.fromDate" id="fromDate" #fromDate="ngModel" name="fromDateEdit">
+        </div>
+        <div class="form-group">
+            <label for="toDate">To-Date</label>
+            <input class="form-control" type="date" placeholder="Pick a DateTime" [(ngModel)]="filter.toDate" id="toDate" #fromDate="ngModel" name="toDateEdit">
+            <div [hidden]="!(areDatesNotValid()) " class="alert alert-danger" name="errorLabel">
+                To-Date has to be after From-Date
+                </div>
+        </div>
+        <button type="submit"class="btn btn-info" [disabled]="this.error" style="width: 100%;">Submit</button>
+    </form>
+    <div id="textDisplay" [hidden] = "this.countDisplay==''">
+        <h2>There {{isAre}}</h2>
+        <h2><span style="font-size: 1.5em;">{{this.countDisplay}}</span> presentation<ng-container *ngIf="this.isAre =='are'">s</ng-container> </h2>
+        <h2>in this timespan</h2>
+    </div>
+</div>

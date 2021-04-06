@@ -1,0 +1,14 @@
+#presentationForm {
+    width: 20vw;
+    margin:auto;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #17a2b8;
+    padding-bottom: 4%;
+
+}
+label{
+    font-weight: bold;
+}

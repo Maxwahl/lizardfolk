@@ -1,0 +1,17 @@
+nav > div {
+    display: table;
+}
+
+nav >div> label {
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    font-size:xx-large;
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar {
+    height:15%;
+    width: 80vw;
+    margin: auto;
+}
